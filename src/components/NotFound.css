@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('https://cdn.pixabay.com/photo/2015/09/07/08/22/under-928246_1280.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,11 +12,22 @@
 .under__construction_title {
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(68, 56, 56);
+  color: rgba(106, 255, 0, 0.582);
 }
 
 .under__construction_warning {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(68, 56, 56);
+  color: rgba(31, 255, 1, 0.521);
+}
+
+.not-found__video-container {
+  position: absolute;
+  width: 101%;
+  left: 50%;
+  top: 50%;
+  height: 101%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -10;
 }
