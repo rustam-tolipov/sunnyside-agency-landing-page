@@ -19,7 +19,9 @@
   .go_back_button {
     top: 3rem;
     left: 3rem;
-    z-index: 1;
+    z-index: 10000;
+    padding: 0.5rem;
+    display: flex;
   }
 
   .go_back_button_text {
