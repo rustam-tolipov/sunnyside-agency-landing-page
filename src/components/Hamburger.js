@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import hamburger from '../images/icon-hamburger.svg';
 import './Hamburger.css';
 
@@ -17,16 +18,16 @@ const Hamburger = () => {
       <div className={`hamburger_menu ${isOpen ? 'hamburger_menu--open' : ''}`}>
         <ul className="hamburger_menu__list">
           <li className="hamburger_menu__list-item">
-            <a href="/About">About</a>
+            <NavLink to="/About">About</NavLink>
           </li>
           <li className="hamburger_menu__list-item">
-            <a href="/Services">Services</a>
+            <NavLink to="/Services">Services</NavLink>
           </li>
           <li className="hamburger_menu__list-item">
-            <a href="/Projects">Projects</a>
+            <NavLink to="/Projects">Projects</NavLink>
           </li>
           <li className="hamburger_menu__list-item contact">
-            <a href="/Contact">Contact</a>
+            <NavLink to="/Contact">Contact</NavLink>
           </li>
         </ul>
       </div>
