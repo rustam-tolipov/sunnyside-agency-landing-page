@@ -1,9 +1,6 @@
 import React from 'react';
 import './Descriptions.css';
 import { useMediaQuery } from 'react-responsive';
-
-// import mediaqueries from '../mediaqueries';
-
 import transform from '../images/desktop/image-transform.jpg';
 import stand from '../images/desktop/image-stand-out.jpg';
 import graphic from '../images/desktop/image-graphic-design.jpg';
@@ -34,7 +31,7 @@ const Descriptions = () => {
         <div className="card-text">
           <div className="card-info">
             <h3 className="card-title">Stand out to the right audience</h3>
-            <p className="card-description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+            <p className="card-description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we&apos;ll build and extend your brand in digital places.</p>
             <a className="card-learn-more" href="https://devrix.com/tutorial/tips-grow-audience-stand-out-social-media/">
               Learn More
             </a>
@@ -48,7 +45,7 @@ const Descriptions = () => {
           <div className="img-card-text">
             <div className="img-card-info">
               <h3 className="img-card-title">Graphic Design</h3>
-              <p className="img-card-description">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clints' attention.</p>
+              <p className="img-card-description">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clints&apos; attention.</p>
             </div>
           </div>
         </div>

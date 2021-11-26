@@ -44,7 +44,9 @@
   text-decoration: none;
   font-size: 3rem;
   display: inline;
+
   --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
+
   padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
   box-decoration-break: clone;
   background-repeat: no-repeat;
@@ -201,7 +203,7 @@
 
   .card-learn-more {
     font-size: 3rem;
-    margin-left: 0.1rem;    
+    margin-left: 0.1rem;
   }
 
   .card-img {

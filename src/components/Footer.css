@@ -10,7 +10,6 @@
 
 .footer__logo {
   width: 25rem;
-  /* padding-top: 10rem; */
   filter: invert(48%) sepia(79%) saturate(26%) hue-rotate(86deg) brightness(68%) contrast(119%);
 }
 
@@ -60,9 +59,11 @@
   .footer__logo {
     width: 20rem;
   }
+
   .footer-content {
     font-size: 2rem;
   }
+
   .footer-content__social {
     padding-top: 1rem;
   }

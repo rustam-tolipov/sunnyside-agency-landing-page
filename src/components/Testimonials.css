@@ -32,8 +32,8 @@
   background: #fff;
   border-radius: 0.5rem;
   padding: 0.1rem 4rem;
-  transition-duration: 5s;
   transition: 0.3s;
+  transition-duration: 5s;
 }
 
 .testimonials__card:hover {

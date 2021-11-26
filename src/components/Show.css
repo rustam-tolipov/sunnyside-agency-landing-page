@@ -1,5 +1,6 @@
 .our-work {
-  display: flex-wrap;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   overflow: hidden;
 }
@@ -8,7 +9,6 @@
   width: 50%;
   height: 100%;
   opacity: 1;
-  transition: 0.1s;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;

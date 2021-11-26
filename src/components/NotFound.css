@@ -1,5 +1,3 @@
-/* Put not-found text in middle of the screen with fruit background img from unsplash*/
-
 .not-found {
   display: flex;
   flex-direction: column;

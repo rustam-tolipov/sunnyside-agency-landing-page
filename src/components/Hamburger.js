@@ -1,20 +1,17 @@
-// Create hamburger menu
-import React from 'react';
 import { useState } from 'react';
 import hamburger from '../images/icon-hamburger.svg';
 import './Hamburger.css';
 
-const Hamburger = (props) => {
+const Hamburger = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   return (
     <div className="hamburger_container">
-      <button className="hamburger_button" onClick={handleClick} aria_label="Menu">
+      <button type="button" className="hamburger_button" onClick={handleClick} aria_label="Menu">
         <img src={hamburger} alt="Menu" />
       </button>
       <div className={`hamburger_menu ${isOpen ? 'hamburger_menu--open' : ''}`}>

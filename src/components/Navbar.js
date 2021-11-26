@@ -1,9 +1,9 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../images/logo.svg';
-import Hamburger from './Hamburger';
 import { useMediaQuery } from 'react-responsive';
 import { NavLink } from 'react-router-dom';
+import logo from '../images/logo.svg';
+import Hamburger from './Hamburger';
 
 const Navbar = () => {
   const sections = [
@@ -35,7 +35,7 @@ const Navbar = () => {
           </NavLink>
         ))}
         <NavLink to="/About">
-          <button className="button__contact" to="/About">
+          <button type="button" className="button__contact" to="/About">
             CONTACT
           </button>
         </NavLink>
