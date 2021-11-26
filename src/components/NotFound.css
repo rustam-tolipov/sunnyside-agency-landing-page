@@ -1,0 +1,25 @@
+/* Put not-found text in middle of the screen with fruit background img from unsplash*/
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2015/09/07/08/22/under-928246_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.under__construction_title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(68, 56, 56);
+}
+
+.under__construction_warning {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(68, 56, 56);
+}
