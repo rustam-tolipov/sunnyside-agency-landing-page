@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-To clone this repo go to "https://github.com/Rustamxon7/Math-Magicians.git"
+To clone this repo go to "https://github.com/Rustamxon7/Sunnyside-agency-landing-page.git"
 
 git clone your repo
 
@@ -60,7 +60,7 @@ Feel free to check? the [issues page]().
 
 ## Acnowledgements
 
-Special thanks to [Frontend Mentor](https://frontendmentor.com/) for the support and guidance.
+Special thanks to [Frontend Mentor](https://www.frontendmentor.io/challenges) for the support and guidance.
 
 ## Show your support
 
