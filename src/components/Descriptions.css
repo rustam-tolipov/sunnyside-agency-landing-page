@@ -1,0 +1,238 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-text {
+  background: #fff;
+  order: 1;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 5rem;
+}
+
+.card-description {
+  padding-top: 1rem;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: 'Barlow', sans-serif;
+  color: hsl(232, 10%, 55%);
+}
+
+:root {
+  --underline-intrinsic-width: 8;
+  --underline-width: 12;
+  --underline-color: #f1a1e3;
+  --underline-cap-width: 4px;
+  --underline-offset-y: 1px;
+  --underline-padding-x: 0.12em;
+  --cap-image-left: url(https://files-d4s40otz1.now.sh/left.svg);
+  --cap-image-right: url(https://files-4vvqilj8v.now.sh/right.svg);
+}
+
+.card-learn-more {
+  margin: 3rem;
+  text-decoration: none;
+  font-size: 3rem;
+  display: inline;
+  --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
+  padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
+  box-decoration-break: clone;
+  background-repeat: no-repeat;
+  color: #000;
+  background-image: linear-gradient(180deg, var(--underline-color), var(--underline-color)), var(--cap-image-left), var(--cap-image-right);
+  background-position-x: calc(var(--underline-cap-width) * var(--underline-width-scale)), 0, 100%;
+  background-position-y: calc(100% - var(--underline-offset-y) * -1);
+  background-size: calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px), auto calc(var(--underline-width) * 1px), auto calc(var(--underline-width) * 1px);
+}
+
+.card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.first,
+.second {
+  position: relative;
+  width: 100%;
+  color: hsl(167, 40%, 24%);
+}
+
+.first > img,
+.second > img {
+  width: 100%;
+}
+
+.img-card-text {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.img-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-card-title {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.img-card-description {
+  font-size: 2.4rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 968px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+  }
+
+  .card-text {
+    order: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background: #fff;
+  }
+
+  .card-info {
+    order: 1;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 17rem;
+  }
+
+  .card-description {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .card-learn-more {
+    font-size: 3rem;
+    margin-left: 0.1rem;
+  }
+
+  .card-img {
+    width: 50%;
+  }
+
+  .first,
+  .second {
+    width: 50%;
+  }
+
+  .img-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-card-text {
+    padding: 5rem 25rem;
+  }
+
+  .img-card-info {
+    flex-direction: column;
+  }
+
+  .img-card-title {
+    font-size: 4rem;
+  }
+
+  .img-card-description {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+  }
+
+  .card-text {
+    order: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background: #fff;
+  }
+
+  .card-info {
+    order: 1;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 11rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .card-description {
+    font-size: 2rem;
+  }
+
+  .card-learn-more {
+    font-size: 3rem;
+    margin-left: 0.1rem;    
+  }
+
+  .card-img {
+    width: 50%;
+  }
+
+  .first,
+  .second {
+    width: 50%;
+  }
+
+  .img-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-card-text {
+    padding: 5rem 13rem;
+  }
+
+  .img-card-info {
+    flex-direction: column;
+  }
+
+  .img-card-title {
+    font-size: 3rem;
+  }
+
+  .img-card-description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    width: 90%;
+  }
+}
