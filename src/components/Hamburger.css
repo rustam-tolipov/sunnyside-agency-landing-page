@@ -1,0 +1,107 @@
+.hamburger_container {
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.hamburger_button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 2.5rem;
+}
+
+.hamburger_menu {
+  position: absolute;
+  top: 32rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.hamburger_menu::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 99%;
+  right: 0.1rem;
+  border: 3.5rem solid transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger_menu__list {
+  list-style: none;
+  padding: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-decoration: none;
+}
+
+.hamburger_menu__list-item {
+  display: block;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hamburger_menu__list-item > a {
+  text-decoration: none;
+  color: rgb(112, 113, 124);
+}
+
+/* animate hamburger_menu--open top right to center */
+
+.hamburger_menu--open {
+  opacity: 1;
+}
+
+.contact > a {
+  background: #d8eb86;
+  border: none;
+  border-radius: 35px;
+  padding: 2rem 2.6rem;
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact:hover {
+  background: #d8eb86;
+  border: none;
+  border-radius: 35px;
+  padding: 2rem 2.6rem;
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact:active {
+  background: #75776d;
+  border: none;
+  border-radius: 35px;
+  padding: 2rem 2.6rem;
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+}

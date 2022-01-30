@@ -1,0 +1,114 @@
+.navbar {
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 4rem;
+  color: #fff;
+}
+
+.navbar__logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.links {
+  display: none;
+}
+
+@media (min-width: 968px) {
+  .navbar {
+    padding: 3rem 6rem;
+    color: #fff;
+  }
+
+  .navbar__logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .links > a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .button__contact {
+    background: hsla(216, 100%, 86%, 0.596);
+    border: none;
+    border-radius: 35px;
+    padding: 2rem 3rem;
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .button__contact:hover {
+    background: hsla(216, 100%, 86%, 0.8);
+  }
+
+  .button__contact:focus {
+    outline: none;
+  }
+
+  .button__contact:active {
+    background: hsla(217, 29%, 71%, 0.8);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .navbar {
+    padding: 3rem 4rem;
+    color: #fff;
+  }
+
+  .links {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button__contact {
+    background: hsl(0, 0%, 94%);
+    border: none;
+    border-radius: 35px;
+    padding: 2rem 2.6rem;
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .button__contact:hover {
+    background: hsla(216, 100%, 86%, 0.8);
+  }
+
+  .button__contact:focus {
+    outline: none;
+  }
+
+  .button__contact:active {
+    background: hsla(217, 29%, 71%, 0.8);
+  }
+}

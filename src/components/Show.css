@@ -1,0 +1,29 @@
+.our-work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.our-work__img {
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 968px) {
+  .our-work__img {
+    width: 25%;
+    margin-bottom: -1rem;
+  }
+
+  .our-work__img:hover {
+    opacity: 1.5;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
